@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пока не придумал — Компьютерный клуб & Lounge</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-dark-nexus text-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-nexus-nav sticky-top border-bottom border-purple">
+        <div class="container">
+            <a class="navbar-brand font-rajdhani fw-bold fs-3 text-uppercase text-gradient" href="#">
+                <i class="bi bi-cpu text-cyan me-2"></i>Пока не <span class="text-purple">придумал</span>
+            </a>
+            <button class="navbar-toggler border-purple" type="button" data-bs-toggle="collapse" data-bs-target="#nexusNav" aria-controls="nexusNav" aria-expanded="false" aria-label="Переключение навигации">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nexusNav">
+                <ul class="navbar-nav ms-auto font-rajdhani fs-5 fw-semibold">
+                    <li class="nav-item"><a class="nav-link active text-cyan" href="#hero">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link text-light-50 hover-cyan" href="#zones-section">Тарифы</a></li>
+                    <li class="nav-item"><a class="nav-link text-light-50 hover-cyan" href="#services-section">Услуги</a></li>
+                    <li class="nav-item"><a class="nav-link text-light-50 hover-cyan" href="#booking-section">Бронь</a></li>
+                    <li class="nav-item"><a class="nav-link text-light-50 hover-cyan" href="#about-section">О клубе</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="hero" class="py-5 text-center bg-dark-accent border-bottom border-secondary">
+        <div class="container py-4">
+            <div class="row align-items-center flex-column-reverse flex-lg-row g-4">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <h1 class="font-rajdhani display-3 fw-bold text-uppercase text-gradient">Клуб «Пока не придумал»</h1>
+                    <p class="lead text-light">Современное киберспортивное пространство. Играй на топовых сборках с RTX 4090 и мониторах 360Hz OLED без задержек и лагов.</p>
+                    
+                    <div class="d-none d-md-block my-3">
+                        <span class="badge bg-purple px-3 py-2 text-uppercase font-rajdhani fs-6 me-2"><i class="bi bi-broadcast me-1"></i> Оптоволокно 1 Gbit/s</span>
+                        <span class="badge bg-cyan text-dark px-3 py-2 text-uppercase font-rajdhani fs-6"><i class="bi bi-shield-check me-1"></i> Кресла Secretlab</span>
+                    </div>
+
+                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start mt-4">
+                        <a href="#booking-section" class="btn btn-cyber-gradient font-rajdhani fw-bold text-uppercase fs-5 px-4 py-2">Забронировать ПК</a>
+                        <button class="btn btn-outline-info font-rajdhani fw-bold text-uppercase fs-5 px-4 py-2" data-bs-toggle="modal" data-bs-target="#rulesModal">Правила клуба</button>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80" alt="Игровой ПК в клубе" class="img-fluid rounded cyber-border shadow-lg">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="zones-section" class="manual-zones-section">
+        <div class="manual-container">
+            <div class="manual-header">
+                <h2 class="manual-title">Игровые зоны и тарифы</h2>
+            </div>
+
+            <div class="manual-grid">
+                <article class="manual-card">
+                    <div class="manual-card-badge">Base</div>
+                    <h3 class="manual-card-title">Standard Zone</h3>
+                    <p class="manual-card-spec">RTX 3060 / 240Hz / Core i5</p>
+                    <p class="manual-card-price">800 ₸ <span>/ час</span></p>
+                    <a href="#booking-section" class="manual-btn">Забронировать</a>
+                </article>
+
+                <article class="manual-card featured">
+                    <div class="manual-card-badge cyan">PRO</div>
+                    <h3 class="manual-card-title">Comfort Zone</h3>
+                    <p class="manual-card-spec">RTX 4070 / 280Hz / Secretlab</p>
+                    <p class="manual-card-price">1 200 ₸ <span>/ час</span></p>
+                    <a href="#booking-section" class="manual-btn cyan-btn">Забронировать</a>
+                </article>
+
+                <article class="manual-card">
+                    <div class="manual-card-badge purple">VIP</div>
+                    <h3 class="manual-card-title">VIP Lounge</h3>
+                    <p class="manual-card-spec">RTX 4090 / 360Hz OLED / Private</p>
+                    <p class="manual-card-price">2 000 ₸ <span>/ час</span></p>
+                    <a href="#booking-section" class="manual-btn">Забронировать</a>
+                </article>
+
+                <article class="manual-card">
+                    <div class="manual-card-badge">Team</div>
+                    <h3 class="manual-card-title">Boot Camp 5v5</h3>
+                    <p class="manual-card-spec">5x RTX 4080 / Изолированная комната</p>
+                    <p class="manual-card-price">7 500 ₸ <span>/ час</span></p>
+                    <a href="#booking-section" class="manual-btn">Забронировать</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="services-section" class="py-5 bg-dark-accent border-bottom border-secondary">
+        <div class="container py-3">
+            <div class="text-center mb-5">
+                <h2 class="font-rajdhani display-5 fw-bold text-uppercase text-gradient">Сервисы & Lounge Bar</h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card cyber-card h-100 p-3">
+                        <div class="card-body">
+                            <div class="fs-1 text-cyan mb-2"><i class="bi bi-controller"></i></div>
+                            <h3 class="card-title font-rajdhani text-light h4">Аренда ПК & Boot Camp</h3>
+                            <p class="card-text text-muted">Почасовая бронь одиночных мест или закрытых буткемпов для тренировок перед турнирами.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card cyber-card h-100 p-3">
+                        <div class="card-body">
+                            <div class="fs-1 text-purple mb-2"><i class="bi bi-cup-hot"></i></div>
+                            <h3 class="card-title font-rajdhani text-light h4">Snack & Energy Bar</h3>
+                            <p class="card-text text-muted">Энергетические напитки, авторский кофе, бургеры и снеки с быстрой подачей к вашему столу.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card cyber-card h-100 p-3">
+                        <div class="card-body">
+                            <div class="fs-1 text-cyan mb-2"><i class="bi bi-tv"></i></div>
+                            <h3 class="card-title font-rajdhani text-light h4">Консольная Зона PS5</h3>
+                            <p class="card-text text-muted">Отдельный лаундж с диванами, экранами 4K 75" и свежими тайтлами FC24, Mortal Kombat и UFC 5.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking-section" class="py-5 border-bottom border-secondary">
+        <div class="container py-3">
+            <div class="row g-4">
+                <div class="col-lg-8 order-1">
+                    <div class="card cyber-card p-4 p-md-5">
+                        <h2 class="h3 font-rajdhani text-cyan border-bottom border-secondary pb-3 mb-4">
+                            <i class="bi bi-controller me-2"></i>Онлайн-бронирование
+                        </h2>
+
+                        <form action="" method="POST" id="bookingForm">
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-7">
+                                    <label for="zoneSelect" class="form-label cyber-label">1. Игровая зона *</label>
+                                    <select class="form-select cyber-input" id="zoneSelect" name="zone" required>
+                                        <option value="" selected disabled>Выберите подходящую зону...</option>
+                                        <option value="standard">Standard Zone</option>
+                                        <option value="comfort">Comfort Zone</option>
+                                        <option value="vip">VIP Lounge</option>
+                                        <option value="bootcamp">Boot Camp 5v5</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-5">
+                                    <label for="seatCount" class="form-label cyber-label">2. Количество мест *</label>
+                                    <input type="number" class="form-control cyber-input" id="seatCount" name="seats" min="1" max="10" value="1" required>
+                                </div>
+                            </div>
+
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-6">
+                                    <label for="visitDate" class="form-label cyber-label">3. Дата визита *</label>
+                                    <input type="date" class="form-control cyber-input" id="visitDate" name="visit_date" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="timePackage" class="form-label cyber-label">4. Выбор пакета *</label>
+                                    <select class="form-select cyber-input" id="timePackage" name="package" required>
+                                        <option value="" selected disabled>Выберите время...</option>
+                                        <option value="3hours">3 часа (Стандарт)</option>
+                                        <option value="5hours">5 часов (Pro Gamer)</option>
+                                        <option value="night">Ночной пакет (22:00 - 08:00)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-4">
+                                    <label for="userName" class="form-label cyber-label">5. Ваше имя *</label>
+                                    <input type="text" class="form-control cyber-input" id="userName" name="user_name" placeholder="Данил" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="userPhone" class="form-label cyber-label">6. Номер телефона *</label>
+                                    <input type="tel" class="form-control cyber-input" id="userPhone" name="user_phone" placeholder="+7 (7XX) XXX-XX-XX" pattern="^(\+7|8)7\d{9}$" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="userSocial" class="form-label cyber-label">7. Telegram / Steam</label>
+                                    <input type="text" class="form-control cyber-input" id="userSocial" name="user_social" placeholder="@nickname">
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label cyber-label d-block mb-2">8. Дополнительные опции</label>
+                                <div class="form-check cyber-checkbox mb-2">
+                                    <input class="form-check-input" type="checkbox" id="checkGear" name="addons[]" value="zowie">
+                                    <label class="form-check-label text-light" for="checkGear">Аренда девайсов Zowie</label>
+                                </div>
+                                <div class="form-check cyber-checkbox">
+                                    <input class="form-check-input" type="checkbox" id="checkDrink" name="addons[]" value="energy">
+                                    <label class="form-check-label text-light" for="checkDrink">Предзаказ напитков в зону</label>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="bookingComment" class="form-label cyber-label">9. Пожелания и комментарии</label>
+                                <textarea class="form-control cyber-input" id="bookingComment" name="comment" rows="2" placeholder="Например: посадить рядом с друзьями..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-cyber-gradient w-100 font-rajdhani fw-bold fs-4 py-3 text-uppercase">
+                                <i class="bi bi-shield-check me-2"></i>Отправить заявку
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 order-2">
+                    <div class="card cyber-card p-4 sticky-top" style="top: 90px;">
+                        <h3 class="h4 font-rajdhani text-purple border-bottom border-secondary pb-3 mb-3">
+                            <i class="bi bi-info-circle me-2"></i>Информация
+                        </h3>
+                        <p class="small text-muted mb-3">Отмена или перенос записи возможны не позднее чем за 2 часа до выбранного времени.</p>
+                        
+                        <button type="button" class="btn btn-outline-info w-100 font-rajdhani text-uppercase mb-3" data-bs-toggle="modal" data-bs-target="#rulesModal">
+                            <i class="bi bi-journal-text me-2"></i>Правила посещения
+                        </button>
+
+                        <div class="p-3 bg-dark-accent rounded border border-purple">
+                            <small class="text-cyan d-block fw-bold mb-1"><i class="bi bi-telephone-fill me-1"></i> Администратор:</small>
+                            <a href="tel:+77001234567" class="text-light text-decoration-none fs-5 fw-bold">+7 (700) 123-45-67</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-section" class="py-5 bg-dark-accent">
+        <div class="container py-3">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6 order-2 order-lg-1">
+                    <h2 class="font-rajdhani display-5 fw-bold text-uppercase text-gradient mb-3">О нашем клубе</h2>
+                    <p class="text-light">Мы спроектировали пространство с акцентом на эргономику, мощное охлаждение и качественную шумоизоляцию. В зале установлены удобные геймерские кресла, проложена гигабитная оптоволоконная линия и настроен софт для мгновенного входа в свои аккаунты.</p>
+                    <span class="badge bg-cyan text-dark p-2 font-rajdhani text-uppercase fs-6 d-inline-block d-md-none">Режим 24/7</span>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 text-center">
+                    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80" alt="Атмосфера в клубе" class="img-fluid rounded cyber-border shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="rulesModal" tabindex="-1" aria-labelledby="rulesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark-accent border-purple text-light">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title font-rajdhani text-cyan fs-4" id="rulesModalLabel"><i class="bi bi-shield-exclamation me-2"></i>Правила посещения</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body text-muted">
+                    <p>1. Допуск лиц младше 16 лет в ночное время (после 22:00) запрещен согласно законодательству РК.</p>
+                    <p>2. Пронос своего алкоголя и еды в игровой зал не допускается.</p>
+                    <p>3. Относитесь бережно к оборудованию и девайсам (удары по клавиатурам и мониторам запрещены).</p>
+                </div>
+                <div class="modal-footer border-secondary">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Понятно</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-nexus-nav border-top border-purple py-4">
+        <div class="container text-center text-md-between d-md-flex align-items-center">
+            <p class="mb-0 text-muted font-rajdhani">&copy; Пока не придумал. Все права защищены.</p>
+            <div class="social-links mt-2 mt-md-0">
+                <a href="#" class="text-cyan me-3 fs-5"><i class="bi bi-telegram"></i></a>
+                <a href="#" class="text-purple me-3 fs-5"><i class="bi bi-discord"></i></a>
+                <a href="#" class="text-cyan fs-5"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
